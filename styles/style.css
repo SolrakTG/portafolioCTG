@@ -1,0 +1,144 @@
+:root {
+    --color-1: #000000;
+    --color-2: #f6f6f6;
+    --color-3: #22df5b;
+    --color-4: #272727;
+
+    --fuente-1: 'Krona One', sans-serif;
+    --fuente-2: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    box-sizing: border-box;
+}
+
+.header {
+   padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-2);
+    font-size: 24px;
+    color: var(--color-3);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--color-3);
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 4% 15%;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: var(--fuente-1);
+}
+
+.presentacion__contenido__texto {
+    font-size: 24px;
+    font-family: var(--fuente-2);
+    text-align: justify; /* Añadir esta línea */
+    
+}
+
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo {
+    font-size: 24px;
+    font-family: var(--fuente-1);
+}
+
+.presentacion__enlaces__link {
+    font-size: 24px;
+    width: 378px;
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 21.5px 0;
+    font-family: var(--fuente-2);
+    font-weight: 600;
+    border-radius: 8px;
+    color: #f6f6f6;
+    text-decoration: none;
+    border: 2px solid var(--color-3);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-4);
+    
+}
+.presentacion__imagen {
+    width: 25%;
+    border: #22df5b 5px groove;
+    border-radius: 8px;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-family: var(--fuente-2);
+    font-size: 24px;
+    padding: 5px;
+}
+
+@media (max-width:1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    
+    .presentacion__contenido {
+        width: 100%;
+        gap: 20px;
+    }
+}
